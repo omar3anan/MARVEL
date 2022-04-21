@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".M2"
+    android:background="@color/black"
+    android:backgroundTint="#F44336">
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="292dp"
+        android:layout_height="135dp"
+        android:background="@drawable/marvelll"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.09" />
+
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="295dp"
+        android:layout_height="25dp"
+        android:background="@drawable/fandom_database_application"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.247" />
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView22"-->
+    <!--        android:layout_width="307dp"-->
+    <!--        android:layout_height="49dp"-->
+    <!--        android:background="@drawable/rectangle_4"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.329" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView24"-->
+    <!--        android:layout_width="142dp"-->
+    <!--        android:layout_height="22dp"-->
+    <!--        android:background="@drawable/example_mail_comm"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.293"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.332" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView25"-->
+    <!--        android:layout_width="307dp"-->
+    <!--        android:layout_height="49dp"-->
+    <!--        android:background="@drawable/rectangle_4"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.42" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView26"-->
+    <!--        android:layout_width="72dp"-->
+    <!--        android:layout_height="24dp"-->
+    <!--        android:background="@drawable/asset11"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.256"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.421" />-->
+
+
+    <Button
+        android:id="@+id/buttonx"
+        android:onClick="launchM4Activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="50dp"
+        android:width="250dp"
+        android:height="60dp"
+        android:background="@drawable/__custom_button"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="#F44336"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView29"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints,UnknownId" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="77dp"
+        android:layout_height="25dp"
+        android:background="@drawable/or_using"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.666" />
+
+    <TextView
+        android:id="@+id/textView210"
+        android:layout_width="60dp"
+        android:layout_height="57dp"
+        android:background="@drawable/ellipse_50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.361"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.761" />
+
+    <Button
+        android:id="@+id/fbclickk"
+        android:layout_width="58dp"
+        android:layout_height="54dp"
+        android:background="@drawable/icon_awesome_facebook"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.756" />
+
+    <TextView
+        android:id="@+id/textView212"
+        android:layout_width="33dp"
+        android:layout_height="35dp"
+        android:background="@drawable/icon_awesome_google"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.373"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <TextView
+        android:id="@+id/textView213"
+        android:layout_width="60dp"
+        android:layout_height="57dp"
+        android:background="@drawable/ellipse_50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.572"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.761" />
+
+    <TextView
+        android:id="@+id/textView214"
+        android:layout_width="36dp"
+        android:layout_height="32dp"
+        android:background="@drawable/icon_awesome_twitter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.565"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.751" />
+
+    <TextView
+        android:id="@+id/textView215"
+        android:layout_width="173dp"
+        android:layout_height="24dp"
+        android:background="@drawable/don_t_have_account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.201"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.842" />
+
+
+    <TextView
+        android:id="@+id/textView217"
+        android:layout_width="328dp"
+        android:layout_height="19dp"
+        android:background="@drawable/by_signing_up_you_agree_on_terms_and_conditions"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.935" />
+
+    <!--    <Button-->
+    <!--        android:id="@+id/buttonxx"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="#F44336"-->
+    <!--        android:text="Create an account"-->
+    <!--        android:elevation="0dp"-->
+    <!--        android:textColor="#FFFF00"-->
+    <!--        android:textSize="15sp"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/textView217"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.184"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView215"-->
+    <!--        app:layout_constraintVertical_bias="1.0"-->
+    <!--        tools:ignore="ExtraText" />-->
+
+    <EditText
+        android:id="@+id/editText_main"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="13"
+        android:hint="Enter Your Username"
+        android:inputType="textLongMessage"
+        android:maxLength="6"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23"
+        tools:ignore="UnknownId" />
+
+    <EditText
+        android:id="@+id/editText_password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:ems="13"
+        android:hint="Enter Your Password"
+        android:inputType="textPassword"
+        android:maxLength="6"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/buttonx"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_main"
+        app:layout_constraintVertical_bias="0.217"
+        tools:ignore="UnknownId" />
+
+    <Button
+        android:id="@+id/buttonxx"
+        android:layout_width="139dp"
+        android:layout_height="22dp"
+        android:background="@drawable/create_an_account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.897" />
+
+
+    <!--    <android.support.design.widget.TextInputLayout-->
+    <!--        android:id="@+id/textinputlayout"-->
+    <!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+
+    <!--        android:layout_width="320dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="32dp"-->
+    <!--        android:layout_marginBottom="32dp"-->
+    <!--       android:background="@color/white"-->
+    <!--        android:hint="Name"-->
+    <!--        app:helperText="required"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/buttonx"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView23"-->
+    <!--        app:counterEnabled="true"-->
+    <!--        app:counterMaxLength="20"-->
+
+    <!--        >-->
+
+    <!--        <android.support.design.widget.TextInputEditText-->
+    <!--            android:id="@+id/textinputedittext"-->
+    <!--            android:maxLength="20"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content" />-->
+    <!--    </android.support.design.widget.TextInputLayout>-->
+
+</android.support.constraint.ConstraintLayout>
