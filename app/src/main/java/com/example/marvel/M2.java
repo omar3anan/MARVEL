@@ -10,10 +10,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+
+//Fadel zorar el google takhdo el facebook w twitter nafs el code , Function getUrl deh 3amlha l kol el buttons el fyl page deh bssssssssssss
 public class M2 extends AppCompatActivity {
     private Button button;
     private Button button2;
     private Button fbclick;
+    private Button tclick;
     public static final String LOG_TAG = "CodeLab";
     public static final String EXTRA_MESSAGE = "msgkey";
     private EditText mMessageEditText;
@@ -29,6 +32,13 @@ public class M2 extends AppCompatActivity {
                 GotUrl("https://www.facebook.com/groups/MCU.Official");
             }
         });
+        tclick= (Button) findViewById(R.id.tclickk);
+        tclick.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                GotUrl("https://twitter.com/Marvel?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor");
+            }
+        });
 
 
 //        button =(Button)findViewById(R.id.buttonx);
@@ -38,6 +48,7 @@ public class M2 extends AppCompatActivity {
 //                open_M4();
 //            }
 //        });
+
         mMessageEditText = findViewById(R.id.editText_main);
 
 
@@ -56,7 +67,7 @@ public class M2 extends AppCompatActivity {
     }
     public void launchM4Activity(View view) {
         Log.d(LOG_TAG, "Button clicked!");
-        Intent intent = new Intent(this, M4.class);
+        Intent intent = new Intent(this, M4.class); // <Implicit Intent> takes 2 parameters this>context , M4.class > class
 
         //getText() method returns an Editable instance
         String message = mMessageEditText.getText().toString();
@@ -64,8 +75,9 @@ public class M2 extends AppCompatActivity {
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
     }
-    public void GotUrl(String s){
+    public void GotUrl(String s){ //function to take URl as a string  <Explicit Intent>
         Uri uri=Uri.parse(s);
         startActivity(new Intent(Intent.ACTION_VIEW,uri));
     }
+
 }

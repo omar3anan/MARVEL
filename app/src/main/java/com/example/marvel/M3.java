@@ -12,7 +12,8 @@ import android.widget.EditText;
 public class M3 extends AppCompatActivity {
     private Button button;
     private Button button2;
-    private Button fbclick;
+    private Button fbclick; //facebook button
+    private Button tclick; //twitter button
     public static final String LOG_TAG = "CodeLab";
     //intent key value
     public static final String EXTRA_MESSAGE = "msgkey";
@@ -36,6 +37,13 @@ public class M3 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 GotUrl("https://www.facebook.com/groups/MCU.Official");
+            }
+        });
+        tclick= (Button) findViewById(R.id.tclickk);
+        tclick.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                GotUrl("https://twitter.com/Marvel?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor");
             }
         });
 
@@ -74,4 +82,5 @@ public class M3 extends AppCompatActivity {
         Uri uri=Uri.parse(s);
         startActivity(new Intent(Intent.ACTION_VIEW,uri));
     }
+
 }

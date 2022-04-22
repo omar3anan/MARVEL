@@ -85,7 +85,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="37dp"
-        android:ems="13"
+        android:ems="6"
         android:hint="Enter Your Username"
         android:maxLength="6"
         android:inputType="textLongMessage"
@@ -127,7 +127,6 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-        android:ems="13"
         android:hint="Example@mail.com"
         android:inputType="textLongMessage"
         android:textColor="@color/white"
@@ -144,7 +143,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="19dp"
         android:layout_marginBottom="19dp"
-        android:ems="13"
         android:hint="Password"
         android:inputType="textPassword"
         android:textColor="@color/white"
@@ -238,8 +236,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.826" />
 
-    <TextView
-        android:id="@+id/textView16"
+    <Button
+        android:id="@+id/tclickk"
         android:layout_width="36dp"
         android:layout_height="32dp"
         android:background="@drawable/icon_awesome_twitter"
