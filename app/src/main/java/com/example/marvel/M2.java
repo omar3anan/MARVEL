@@ -9,14 +9,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-
-
 //Fadel zorar el google takhdo el facebook w twitter nafs el code , Function getUrl deh 3amlha l kol el buttons el fyl page deh bssssssssssss
+//buttons hya hya fy page N12 copy w paste + github button bta3 el repo bta3na
+
 public class M2 extends AppCompatActivity {
     private Button button;
     private Button button2;
-    private Button fbclick;
-    private Button tclick;
+    private Button fbclick; //Facebook
+    private Button tclick; //twitter button
     public static final String LOG_TAG = "CodeLab";
     public static final String EXTRA_MESSAGE = "msgkey";
     private EditText mMessageEditText;
