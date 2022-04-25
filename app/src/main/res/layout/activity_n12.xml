@@ -27,9 +27,10 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.04" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <Button
+        android:id="@+id/textView9"
+        android:layout_width="32dp"
+        android:layout_height="21dp"
         android:background="@drawable/icon_feather_menu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.108"
@@ -49,9 +50,10 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.116" />
 
-    <TextView
-        android:layout_width="130dp"
-        android:layout_height="122dp"
+    <Button
+        android:id="@+id/tclickk"
+        android:layout_width="125dp"
+        android:layout_height="117dp"
         android:background="@drawable/icon_awesome_twitter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.209"
@@ -60,9 +62,10 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.316" />
 
-    <TextView
-        android:layout_width="130dp"
-        android:layout_height="122dp"
+    <Button
+        android:id="@+id/fbclickk"
+        android:layout_width="124dp"
+        android:layout_height="125dp"
         android:background="@drawable/icon_awesome_facebookk"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.868"
@@ -71,9 +74,10 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.316" />
 
-    <TextView
-        android:layout_width="130dp"
-        android:layout_height="122dp"
+    <Button
+        android:id="@+id/gtclickk"
+        android:layout_width="129dp"
+        android:layout_height="127dp"
         android:background="@drawable/icon_awesome_github"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.868"
@@ -82,9 +86,10 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.614" />
 
-    <TextView
+    <Button
+        android:id="@+id/instaclickk"
         android:layout_width="130dp"
-        android:layout_height="122dp"
+        android:layout_height="130dp"
         android:background="@drawable/icon_awesome_instagram"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.209"

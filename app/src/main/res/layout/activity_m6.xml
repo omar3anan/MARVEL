@@ -24,10 +24,10 @@
         tools:layout_editor_absoluteY="-158dp"
         tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <Button
+        android:id="@+id/textView9"
+        android:layout_width="32dp"
+        android:layout_height="21dp"
         android:background="@drawable/icon_feather_menu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.108"
@@ -35,6 +35,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.039" />
+
 
     <TextView
         android:id="@+id/textView10"
@@ -73,7 +74,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/textView10"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
         app:layout_constraintTop_toBottomOf="@+id/textView7"
         tools:ignore="MissingConstraints" />
 
@@ -111,21 +112,25 @@
         android:layout_width="16dp"
         android:layout_height="25dp"
         android:layout_marginTop="321dp"
-        android:layout_marginEnd="28dp"
+        android:layout_marginEnd="20dp"
         android:background="@drawable/icon_ionic_ios_arrow_back_1"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/left"
         android:layout_width="16dp"
         android:layout_height="25dp"
-        android:layout_marginStart="28dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="324dp"
         android:background="@drawable/icon_ionic_ios_arrow_back2"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.009"
         tools:ignore="MissingConstraints" />
 
     <!--    <ImageView-->

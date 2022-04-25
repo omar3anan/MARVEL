@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MARVEL">
         <activity
+            android:name=".M9"
+            android:exported="false" />
+        <activity
             android:name=".N12"
             android:exported="false" />
         <activity

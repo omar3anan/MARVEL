@@ -44,55 +44,67 @@
     <!--        tools:ignore="MissingConstraints"-->
     <!--        tools:layout_editor_absoluteX="351dp"-->
     <!--        tools:layout_editor_absoluteY="34dp" />-->
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="3247dp"
-        android:layout_height="2732dp"
-        app:srcCompat="@drawable/maxresdefault"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-1330dp"
-        tools:layout_editor_absoluteY="-681dp" />
+
+    <Button
+        android:id="@+id/textView9"
+        android:layout_width="32dp"
+        android:layout_height="21dp"
+        android:background="@drawable/icon_feather_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039" />
 
     <TextView
         android:id="@+id/text_view_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="79dp"
         android:text="CHARACTERS"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="25dp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="128dp"
-        tools:layout_editor_absoluteY="135dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/text_view_id2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
         android:text="HEROS"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="25dp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="175dp"
-        tools:layout_editor_absoluteY="330dp" />
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/text_view_id3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
         android:text="VILLANS"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="25dp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="523dp" />
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <TextView
+        android:id="@+id/textView20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/_0_809323_the_marvel_cinematic_universe_consists_of_other_products"
@@ -115,27 +127,35 @@
         android:id="@+id/imageView3"
         android:layout_width="418dp"
         android:layout_height="113dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_view_id2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_id"
+        app:layout_constraintVertical_bias="0.51"
         app:srcCompat="@drawable/scroll_group_3"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="192dp"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="411dp"
         android:layout_height="114dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_view_id3"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/scroll_group_4"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="384dp"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="408dp"
         android:layout_height="119dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/scroll_group_5"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="572dp"
         tools:ignore="MissingConstraints" />
 
 </android.support.constraint.ConstraintLayout>

@@ -14,8 +14,7 @@ import android.widget.EditText;
 public class M2 extends AppCompatActivity {
     private Button button;
     private Button button2;
-    private Button fbclick; //Facebook
-    private Button tclick; //twitter button
+
     public static final String LOG_TAG = "CodeLab";
     public static final String EXTRA_MESSAGE = "msgkey";
     private EditText mMessageEditText;
@@ -24,20 +23,6 @@ public class M2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_m2);
 
-        fbclick= (Button) findViewById(R.id.fbclickk);
-        fbclick.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                GotUrl("https://www.facebook.com/groups/MCU.Official");
-            }
-        });
-        tclick= (Button) findViewById(R.id.tclickk);
-        tclick.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                GotUrl("https://twitter.com/Marvel?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor");
-            }
-        });
 
 
 //        button =(Button)findViewById(R.id.LoginBtn);
@@ -74,9 +59,6 @@ public class M2 extends AppCompatActivity {
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
     }
-    public void GotUrl(String s){ //function to take URl as a string  <Explicit Intent>
-        Uri uri=Uri.parse(s);
-        startActivity(new Intent(Intent.ACTION_VIEW,uri));
-    }
+
 
 }

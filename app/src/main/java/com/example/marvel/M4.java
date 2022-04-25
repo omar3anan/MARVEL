@@ -9,6 +9,7 @@ import android.widget.TextView;
 //3aizen design ll profile picture el (Unknown) 3alshan tet7at gamb el listner fy M4 page 3alshan yn2a dah esm el account bta3o
 public class M4 extends AppCompatActivity {
     private Button button;
+    private Button button2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +21,13 @@ public class M4 extends AppCompatActivity {
                 open_M5();
             }
         });
+        button2 =(Button)findViewById(R.id.textView9);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                open_M8();
+            }
+        });
         Intent intent = getIntent();
         String message =intent.getStringExtra(M3.EXTRA_MESSAGE);
 
@@ -27,7 +35,11 @@ public class M4 extends AppCompatActivity {
         textView.setText(message);
     }
     public void open_M5(){
-        Intent intent=new Intent(this,M5.class);
+        Intent intent=new Intent(M4.this,M5.class);
+        startActivity(intent);
+    }
+    public void open_M8(){
+        Intent intent=new Intent(M4.this,M8.class);
         startActivity(intent);
     }
 

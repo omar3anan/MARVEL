@@ -7,21 +7,21 @@ import android.view.View;
 import android.widget.Button;
 
 public class M9 extends AppCompatActivity {
-    private Button button;
+    private Button button2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_m9);
-        button =(Button)findViewById(R.id.right);
-        button.setOnClickListener(new View.OnClickListener() {
+        button2 =(Button)findViewById(R.id.textView9);
+        button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                open_N10();
+                open_M8();
             }
         });
     }
-    public void open_N10(){
-        Intent intent=new Intent(this,N10.class);
+    public void open_M8(){
+        Intent intent=new Intent(M9.this,M8.class);
         startActivity(intent);
     }
 }

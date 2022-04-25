@@ -19,7 +19,7 @@
         app:layout_constraintVertical_bias="0.039" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/_0_809323_the_marvel_cinematic_universe_consists_of_other_products"
@@ -41,87 +41,78 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.04" />
 
-    <TextView
-        android:id="@+id/text_view_id"
+    <Button
+        android:background="#F44336"
+        android:id="@+id/homee"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_marginTop="139dp"
         android:text="HOME"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="30dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/comics"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintTop_toBottomOf="@+id/textView18"
         tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/comics"
+
+    <Button
+        android:id="@+id/comicss"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:background="#F44336"
         android:text="COMICS"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="30dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/text_view_id3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homee"
         tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/text_view_id3"
+    <Button
+        android:background="#F44336"
+        android:id="@+id/charr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_marginTop="36dp"
         android:text="CHARACTERS"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="30dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/text_view_id4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comicss"
         tools:ignore="MissingConstraints" />
 
-<!--    <TextView-->
-<!--        android:id="@+id/text_view_id4"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginBottom="32dp"-->
-<!--        android:text="ABOUT"-->
-<!--        android:textAlignment="center"-->
-<!--        android:textColor="#FFFFFF"-->
-<!--        android:textSize="30dp"-->
-<!--        android:textStyle="bold"-->
-<!--        app:layout_constraintBottom_toTopOf="@+id/text_view_id5"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        tools:ignore="MissingConstraints" />-->
-    <TextView
-        android:id="@+id/text_view_id4"
-        android:layout_width="107dp"
-        android:layout_height="44dp"
-        android:layout_marginBottom="32dp"
+    <Button
+        android:background="#F44336"
+        android:id="@+id/aboutt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
         android:text="ABOUT"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="30dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/text_view_id5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/charr"
         tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/text_view_id5"
+    <Button
+        android:background="#F44336"
+        android:id="@+id/uss"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="224dp"
+        android:layout_marginTop="35dp"
         android:text="CONTACT US"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
@@ -129,7 +120,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutt"
+        app:layout_constraintVertical_bias="0.083"
         tools:ignore="MissingConstraints" />
 
 </android.support.constraint.ConstraintLayout>
