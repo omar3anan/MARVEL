@@ -69,7 +69,7 @@ public class M3 extends AppCompatActivity {
     }
 
     public void launchM2Activity(View view) {
-        Log.d(LOG_TAG, "Button clicked!");
+        Log.d(LOG_TAG, "Button clicked Successfully!");
         Intent intent = new Intent(this, M2.class);
 
         //getText() method returns an Editable instance

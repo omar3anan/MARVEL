@@ -79,7 +79,6 @@
 
     <Button
         android:id="@+id/buttonx"
-        android:onClick="launchM4Activity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -87,7 +86,8 @@
         android:width="250dp"
         android:height="60dp"
         android:background="@drawable/__custom_button"
-        android:text="Login"
+        android:onClick="launchM4Activity"
+        android:text="Sign In"
         android:textAllCaps="false"
         android:textColor="#F44336"
         android:textSize="17sp"
