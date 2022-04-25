@@ -13,7 +13,7 @@ public class M4 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_m4);
-        button =(Button)findViewById(R.id.buttonx);
+        button =(Button)findViewById(R.id.PlayBtn);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

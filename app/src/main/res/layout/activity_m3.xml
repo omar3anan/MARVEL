@@ -147,7 +147,7 @@
         android:inputType="textPassword"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/buttonx"
+        app:layout_constraintBottom_toTopOf="@+id/LoginBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.531"
         app:layout_constraintStart_toStartOf="parent"
@@ -156,15 +156,14 @@
         tools:ignore="UnknownId" />
 
     <Button
-        android:id="@+id/buttonx"
+        android:id="@+id/RegisterBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
         android:layout_marginBottom="40dp"
         android:width="250dp"
         android:height="60dp"
         android:background="@drawable/__custom_button"
-        android:onClick="launchM4Activity"
+        android:onClick="launchM2Activity"
         android:text="Sign Up"
         android:textAllCaps="false"
         android:textColor="#F44336"
@@ -261,10 +260,11 @@
         app:layout_constraintVertical_bias="0.889" />
 
     <Button
-        android:id="@+id/buttonxx"
+        android:id="@+id/LoginBtn"
         android:layout_width="101dp"
         android:layout_height="25dp"
         android:background="@drawable/sign_in_now"
+        android:onClick="launchM2Activity"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.157"
         app:layout_constraintLeft_toLeftOf="parent"

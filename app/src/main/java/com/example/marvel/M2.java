@@ -8,7 +8,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 //Fadel zorar el google takhdo el facebook w twitter nafs el code , Function getUrl deh 3amlha l kol el buttons el fyl page deh bssssssssssss
 //buttons hya hya fy page N12 copy w paste + github button bta3 el repo bta3na
 
@@ -41,7 +40,7 @@ public class M2 extends AppCompatActivity {
         });
 
 
-//        button =(Button)findViewById(R.id.buttonx);
+//        button =(Button)findViewById(R.id.LoginBtn);
 //        button.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
@@ -52,7 +51,7 @@ public class M2 extends AppCompatActivity {
         mMessageEditText = findViewById(R.id.editText_main);
 
 
-        button2 =(Button)findViewById(R.id.buttonxx) ;
+        button2 =(Button)findViewById(R.id.RegisterBtn) ;
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
