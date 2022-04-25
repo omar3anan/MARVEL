@@ -24,7 +24,7 @@ public class M3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_m3);
 
-//        button = (Button) findViewById(R.id.buttonx);
+//        button = (Button) findViewById(R.id.LoginBtn);
 //        button.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
@@ -49,7 +49,7 @@ public class M3 extends AppCompatActivity {
 
         mMessageEditText = findViewById(R.id.editText_main);
 
-        button2 = (Button) findViewById(R.id.buttonxx);
+        button2 = (Button) findViewById(R.id.RegisterBtn);
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

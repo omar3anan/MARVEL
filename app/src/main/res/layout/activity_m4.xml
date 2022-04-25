@@ -143,7 +143,7 @@
         app:layout_constraintVertical_bias="0.907" />
 
     <Button
-        android:id="@+id/buttonx"
+        android:id="@+id/PlayBtn"
         android:layout_width="58dp"
         android:layout_height="57dp"
         android:background="@drawable/icon_feather_play_circle"

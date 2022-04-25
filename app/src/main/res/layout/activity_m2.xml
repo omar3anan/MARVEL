@@ -78,7 +78,7 @@
 
 
     <Button
-        android:id="@+id/buttonx"
+        android:id="@+id/LoginBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -198,7 +198,7 @@
         app:layout_constraintVertical_bias="0.935" />
 
     <!--    <Button-->
-    <!--        android:id="@+id/buttonxx"-->
+    <!--        android:id="@+id/CreateAccBtn"-->
     <!--        android:layout_width="wrap_content"-->
     <!--        android:layout_height="wrap_content"-->
     <!--        android:background="#F44336"-->
@@ -242,7 +242,7 @@
         android:maxLength="6"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/buttonx"
+        app:layout_constraintBottom_toTopOf="@+id/LoginBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.531"
         app:layout_constraintStart_toStartOf="parent"
@@ -251,7 +251,7 @@
         tools:ignore="UnknownId" />
 
     <Button
-        android:id="@+id/buttonxx"
+        android:id="@+id/RegisterBtn"
         android:layout_width="139dp"
         android:layout_height="22dp"
         android:background="@drawable/create_an_account"
@@ -274,7 +274,7 @@
     <!--       android:background="@color/white"-->
     <!--        android:hint="Name"-->
     <!--        app:helperText="required"-->
-    <!--        app:layout_constraintBottom_toTopOf="@+id/buttonx"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/LoginBtn"-->
     <!--        app:layout_constraintEnd_toEndOf="parent"-->
     <!--        app:layout_constraintStart_toStartOf="parent"-->
     <!--        app:layout_constraintTop_toBottomOf="@+id/textView23"-->
