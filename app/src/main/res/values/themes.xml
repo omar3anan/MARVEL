@@ -7,4 +7,13 @@
         <item name="colorAccent">@color/black</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="Theme.MARVEL.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.MARVEL.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.MARVEL.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

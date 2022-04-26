@@ -1,7 +1,16 @@
 package com.example.marvel;
 
+import static android.app.Notification.EXTRA_NOTIFICATION_ID;
+
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
+import android.os.Build;
+import android.support.v4.app.NotificationCompat;
+import android.support.v4.app.NotificationManagerCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -11,13 +20,11 @@ import android.widget.EditText;
 
 public class M3 extends AppCompatActivity {
     private Button button;
-    private Button button2;
-
+    private Button buttonRegister;
     public static final String LOG_TAG = "CodeLab";
     //intent key value
     public static final String EXTRA_MESSAGE = "msgkey";
     private EditText mMessageEditText;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,10 +40,30 @@ public class M3 extends AppCompatActivity {
 
         mMessageEditText = findViewById(R.id.editText_main);
 
-        button2 = (Button) findViewById(R.id.RegisterBtn);
-        button2.setOnClickListener(new View.OnClickListener() {
+        final EditText ReguserName =(EditText) findViewById(R.id.editText_main) ;
+        final EditText RegPassword =(EditText) findViewById(R.id.password) ;
+        final EditText RegEmail =(EditText) findViewById(R.id.email) ;
+        Button btnRegister=(Button)findViewById(R.id.RegisterBtn) ;
+
+
+
+        buttonRegister = (Button) findViewById(R.id.RegisterBtn);
+
+
+
+        buttonRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                SharedPreferences preferences =getSharedPreferences("MYPREFS",MODE_PRIVATE);
+                String newUser=ReguserName.getText().toString();
+                String newPassword=RegPassword.getText().toString();
+                String newEmail=RegEmail.getText().toString();
+
+                SharedPreferences.Editor editor=preferences.edit();
+                editor.putString(newUser+newPassword+"data",newUser+"\n"+newEmail);
+                editor.commit();
+
                 open_M2();
             }
         });
@@ -49,6 +76,10 @@ public class M3 extends AppCompatActivity {
 
     public void open_M2() {
         Intent intent = new Intent(this, M2.class);
+        startActivity(intent);
+    }
+    public void open_DScreen(){
+        Intent intent=new Intent(this,DisplayScreen.class);
         startActivity(intent);
     }
 
