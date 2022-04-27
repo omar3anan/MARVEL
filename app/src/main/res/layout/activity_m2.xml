@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".M2"
     android:background="@color/black"
-    android:backgroundTint="#F44336">
+    android:backgroundTint="#F44336"
+    tools:context=".M2">
+
     <TextView
         android:id="@+id/textView21"
         android:layout_width="292dp"
@@ -87,7 +88,7 @@
         android:height="60dp"
         android:background="@drawable/__custom_button"
         android:onClick="launchM4Activity"
-        android:text="Sign In"
+        android:text="@string/sign_in"
         android:textAllCaps="false"
         android:textColor="#F44336"
         android:textSize="17sp"
@@ -220,14 +221,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:ems="6"
-        android:hint="Enter Your Username"
+        android:hint="@string/enter_your_username"
         android:inputType="textLongMessage"
-        android:maxLength="6"
+        android:maxLength="10"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.531"
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView23"
         tools:ignore="UnknownId" />
@@ -238,7 +238,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="22dp"
         android:layout_marginBottom="16dp"
-        android:hint="Enter Your Password"
+        android:hint="@string/enter_your_password"
         android:inputType="textPassword"
         android:maxLength="6"
         android:textColor="@color/white"

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FF0000"
@@ -8,11 +10,17 @@
 
     <TextView
         android:id="@+id/DisplayData"
-        android:layout_width="146dp"
-        android:layout_height="116dp"
-        android:layout_marginStart="150px"
-        android:layout_marginTop="150px"
-        android:layout_marginEnd="150px"
-        android:layout_marginBottom="150px"
-        android:text="Large Test" />
-</RelativeLayout>
+        android:layout_width="218dp"
+        android:layout_height="214dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Large Test"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

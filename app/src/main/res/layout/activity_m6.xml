@@ -36,7 +36,7 @@
         android:id="@+id/textViewwww"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SPIDER-MAN MOVIES"
+        android:text="@string/spider_man_movies"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="25dp"
