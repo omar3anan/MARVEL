@@ -1,126 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/portrait_display_spider_man_spider_man_homecoming_2017_marvel_cinematic_universe_wallpaper_preview"
+    android:orientation="vertical"
     tools:context=".M7">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="728dp"
-        android:layout_height="1078dp"
-        app:srcCompat="@drawable/portrait_display_spider_man_spider_man_homecoming_2017_marvel_cinematic_universe_wallpaper_preview"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-18dp"
-        tools:layout_editor_absoluteY="-157dp" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
+        android:id="@+id/imageView10"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="96dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13"
-        app:layout_constraintVertical_bias="0.168"
-        app:srcCompat="@drawable/clean"
-        tools:ignore="MissingConstraints" />
+        android:translationX="-170dp"
+        android:translationY="45dp"
+        app:srcCompat="@drawable/icon_feather_menu" />
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.542"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.073"
-        app:srcCompat="@drawable/amazing_spider_man_vol__1_back_to_basics"
-        tools:ignore="MissingConstraints" />
+        android:translationY="25dp"
 
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
+        app:srcCompat="@drawable/_0_809323_the_marvel_cinematic_universe_consists_of_other_products" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/_0_809323_the_marvel_cinematic_universe_consists_of_other_products"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.542"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.04" />
-
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/icon_feather_search"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.903"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.04" />
-
-    <Button
-        android:id="@+id/textView9"
-        android:layout_width="32dp"
-        android:layout_height="21dp"
-        android:background="@drawable/icon_feather_menu"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.108"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.039" />
-
+        android:translationX="155dp"
+        app:srcCompat="@drawable/icon_feather_search" />
 
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="375dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13"
-        app:layout_constraintVertical_bias="0.552"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
         app:srcCompat="@drawable/spider_man_comics"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="94dp"/>
 
-    <Button
-        android:id="@+id/rightt"
-        android:layout_width="16dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="17dp"
-        android:background="@drawable/icon_ionic_ios_arrow_back_1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView16"
-        app:layout_constraintVertical_bias="0.457"
-        tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/left"
-        android:layout_width="16dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="325dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/icon_ionic_ios_arrow_back2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="MissingConstraints" />
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/comics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-20dp"
+        app:layout_constraintVertical_bias="0.533" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="420dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="-40dp"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/amazing_spider_man_vol__1_back_to_basics" />
+</LinearLayout>
