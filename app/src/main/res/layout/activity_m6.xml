@@ -9,28 +9,29 @@
     tools:context=".M6"
     android:orientation="vertical">
 
+    <Button
+        android:id="@+id/textView9"
+        android:layout_width="35dp"
+        android:layout_height="25dp"
+        android:background="@drawable/icon_feather_menu"
+        android:translationX="25dp"
+        android:translationY="45dp" />
+
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/imageView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:translationX="-170dp"
-        android:translationY="45dp"
-        app:srcCompat="@drawable/icon_feather_menu" />
+        android:translationY="13dp"
+
+        app:srcCompat="@drawable/_0_809323_the_marvel_cinematic_universe_consists_of_other_products" />
 
     <ImageView
         android:id="@+id/imageView14"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:translationX="155dp"
-        android:translationY="22dp"
+        android:translationY="-15dp"
         app:srcCompat="@drawable/icon_feather_search" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:translationY="-1dp"
-        app:srcCompat="@drawable/_0_809323_the_marvel_cinematic_universe_consists_of_other_products" />
 
     <TextView
         android:id="@+id/textViewwww"
@@ -44,21 +45,22 @@
         android:translationY="15dp" />
 
 
-    <TextView
-        android:id="@+id/textViewxx"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="SPIDER-MAN (2002)"
-        android:layout_marginBottom="25dp"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        android:translationY="500dp" />
+<!--    <TextView-->
+<!--        android:id="@+id/textViewxx"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="SPIDER-MAN (2002)"-->
+<!--        android:layout_marginBottom="25dp"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:textSize="25dp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:translationY="500dp" />-->
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/list1"
         android:layout_width="match_parent"
-        android:layout_height="396dp" />
+        android:layout_height="396dp"
+        android:translationY="100dp"/>
 
 </LinearLayout>

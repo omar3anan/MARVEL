@@ -8,36 +8,18 @@
     android:background="@color/black"
     android:backgroundTint="#F44336">
     <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="2234dp"
-        android:layout_height="1320dp"
-        app:srcCompat="@drawable/maxresdefault"
-        tools:layout_editor_absoluteX="-278dp"
-        tools:layout_editor_absoluteY="-235dp"
+        android:id="@+id/imageView"
+        android:layout_width="728dp"
+        android:layout_height="1078dp"
+        android:backgroundTint="#F44336"
+        tools:layout_editor_absoluteX="-14dp"
+        tools:layout_editor_absoluteY="-158dp"
         tools:ignore="MissingConstraints" />
 
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="178dp"
-        android:layout_height="282dp"
-        app:srcCompat="@drawable/nopath___copy"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="126dp" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="178dp"
-        android:layout_height="282dp"
-        app:srcCompat="@drawable/nopath___copy"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="219dp"
-        tools:layout_editor_absoluteY="431dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <Button
+        android:id="@+id/textView9"
+        android:layout_width="32dp"
+        android:layout_height="21dp"
         android:background="@drawable/icon_feather_menu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.108"
@@ -46,18 +28,9 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.039" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/_0_809323_the_marvel_cinematic_universe_consists_of_other_products"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.039" />
 
     <TextView
+        android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/icon_feather_search"
@@ -68,83 +41,88 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.04" />
 
-    <ImageView
-        android:id="@+id/imageView19"
+    <TextView
+        android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/comics_white"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="91dp" />
-
-    <ImageView
-        android:id="@+id/imageView15"
-        android:layout_width="178dp"
-        android:layout_height="282dp"
-        app:srcCompat="@drawable/clean"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="431dp"
-        tools:ignore="MissingConstraints" />
-
-    <ImageView
-        android:id="@+id/imageView16"
-        android:layout_width="178dp"
-        android:layout_height="282dp"
-        app:srcCompat="@drawable/clean"
-        tools:layout_editor_absoluteX="219dp"
-        tools:layout_editor_absoluteY="126dp"
-        tools:ignore="MissingConstraints" />
+        android:background="@drawable/_0_809323_the_marvel_cinematic_universe_consists_of_other_products"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/text_view_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="The Invincible IronMan"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="52dp"
+        android:text="COMICS"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="12dp"
+        android:textSize="25dp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="392dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView10"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/text_view_id2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="The Invincible IronMan"
+        android:layout_marginBottom="60dp"
+        android:text="the_invincible_iron_man"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="12dp"
+        android:textSize="25dp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="243dp"
-        tools:layout_editor_absoluteY="700dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/textView11"
+    <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Amazing Spdierman"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="12dp"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="257dp"
-        tools:layout_editor_absoluteY="392dp" />
+        app:layout_constraintBottom_toTopOf="@+id/text_view_id2"
 
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Amazing Spdierman"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="12dp"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="697dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_id"
+        app:layout_constraintVertical_bias="0.457"
+        app:srcCompat="@drawable/nopath___copy"
+        tools:ignore="MissingConstraints" />
+
+    <!--    <Button-->
+<!--        android:id="@+id/right"-->
+<!--        android:layout_width="16dp"-->
+<!--        android:layout_height="25dp"-->
+<!--        android:layout_marginTop="321dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:background="@drawable/icon_ionic_ios_arrow_back_1"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView10"-->
+<!--        app:layout_constraintVertical_bias="0.0"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/left"-->
+<!--        android:layout_width="16dp"-->
+<!--        android:layout_height="25dp"-->
+<!--        android:layout_marginStart="32dp"-->
+<!--        android:layout_marginTop="324dp"-->
+<!--        android:background="@drawable/icon_ionic_ios_arrow_back2"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView9"-->
+<!--        app:layout_constraintVertical_bias="0.009"-->
+<!--        tools:ignore="MissingConstraints" />-->
 
 </android.support.constraint.ConstraintLayout>

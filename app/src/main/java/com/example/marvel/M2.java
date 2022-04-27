@@ -16,7 +16,7 @@ import android.widget.Toast;
 
 public class M2 extends AppCompatActivity{
     private Button button;
-    private Button Loginbutton;
+    private Button login;
     private Button RegButton;
     public static final String LOG_TAG = "CodeLab";
     public static final String EXTRA_MESSAGE = "msgkey";
@@ -45,8 +45,8 @@ public class M2 extends AppCompatActivity{
 
 
 
-        Loginbutton =(Button)findViewById(R.id.LoginBtn) ;
-        Loginbutton.setOnClickListener(new View.OnClickListener() {
+        login =(Button)findViewById(R.id.LoginBtn) ;
+        login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String user=etName.getText().toString();
@@ -83,32 +83,32 @@ public class M2 extends AppCompatActivity{
 
     }
     public void open_DScreen(){
-        Intent intent=new Intent(this,DisplayScreen.class);
+        Intent intent=new Intent(M2.this,DisplayScreen.class);
         startActivity(intent);
     }
     public void open_M3(){
-        Intent intent=new Intent(this,M3.class);
+        Intent intent=new Intent(M2.this,M3.class);
         startActivity(intent);
     }
-    public void open_M5(){
-        Intent intent=new Intent(this,M5.class);
-        startActivity(intent);
-    }
+//    public void open_M5(){
+//        Intent intent=new Intent(this,M5.class);
+//        startActivity(intent);
+//    }
 
     public void open_M4(){
-        Intent intent=new Intent(this,M4.class);
+        Intent intent=new Intent(M2.this,M4.class);
         startActivity(intent);
     }
-    public void launchM4Activity(View view) {
-        Log.d(LOG_TAG, "Button clicked!");
-        Intent intent = new Intent(this, M4.class); // <Implicit Intent> takes 2 parameters this>context , M4.class > class
-
-        //getText() method returns an Editable instance
-        String message = mMessageEditText.getText().toString();
-
-        intent.putExtra(EXTRA_MESSAGE, message);
-        startActivity(intent);
-    }
+//    public void launchM4Activity(View view) {
+//        Log.d(LOG_TAG, "Button clicked!");
+//        Intent intent = new Intent(this, M4.class); // <Implicit Intent> takes 2 parameters this>context , M4.class > class
+//
+//        //getText() method returns an Editable instance
+//        String message = mMessageEditText.getText().toString();
+//
+//        intent.putExtra(EXTRA_MESSAGE, message);
+//        startActivity(intent);
+//    }
 
 
 }

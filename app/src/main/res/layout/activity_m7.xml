@@ -9,19 +9,19 @@
     tools:context=".M7">
 
 
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:translationX="-170dp"
-        android:translationY="45dp"
-        app:srcCompat="@drawable/icon_feather_menu" />
+    <Button
+        android:id="@+id/textView9"
+        android:layout_width="35dp"
+        android:layout_height="25dp"
+        android:background="@drawable/icon_feather_menu"
+        android:translationX="25dp"
+        android:translationY="45dp" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:translationY="25dp"
+        android:translationY="13dp"
 
         app:srcCompat="@drawable/_0_809323_the_marvel_cinematic_universe_consists_of_other_products" />
 
@@ -30,8 +30,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:translationX="155dp"
+        android:translationY="-15dp"
         app:srcCompat="@drawable/icon_feather_search" />
-
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="wrap_content"
