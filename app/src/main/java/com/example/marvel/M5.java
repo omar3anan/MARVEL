@@ -33,7 +33,7 @@ public class M5 extends AppCompatActivity {
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                open_M9();
+                open_M7();
             }
         });
     }
@@ -45,8 +45,8 @@ public class M5 extends AppCompatActivity {
         Intent intent=new Intent(M5.this,M8.class);
         startActivity(intent);
     }
-    public void open_M9(){
-        Intent intent=new Intent(M5.this,M9.class);
+    public void open_M7(){
+        Intent intent=new Intent(M5.this,M7.class);
         startActivity(intent);
     }
 }

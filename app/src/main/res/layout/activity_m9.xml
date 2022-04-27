@@ -75,7 +75,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="60dp"
-        android:text="the_invincible_iron_man"
+        android:text="@string/the_invincible_iron_man"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="25dp"

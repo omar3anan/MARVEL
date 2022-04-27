@@ -32,5 +32,9 @@
     <string name="stan_lee_steve_ditko">Stan Lee, Steve Ditko</string>
     <string name="_133_mins">133 mins</string>
     <string name="spider_man_movies">SPIDER-MAN MOVIES</string>
+    <string name="_133_min">133 mins</string>
+    <string name="spider_man_comics">Spider-Man Comics</string>
+    <string name="the_invincible_iron_man">the invincible iron man</string>
+    <string name="explore_comics_world">Explore Comics World</string>
     <!-- Strings used for fragments for navigation -->
 </resources>
