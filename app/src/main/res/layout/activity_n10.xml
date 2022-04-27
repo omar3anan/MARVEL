@@ -1,161 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".N10"
     android:background="@color/teal_200"
-    android:backgroundTint="#F44336">
-    <TextView
-        android:layout_width="wrap_content"
+    android:backgroundTint="#F44336"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/icon_feather_menu"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.108"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.039" />
+        android:translationX="-170dp"
+        android:translationY="45dp"
+        app:srcCompat="@drawable/icon_feather_menu" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:translationY="25dp"
+
+        app:srcCompat="@drawable/_0_809323_the_marvel_cinematic_universe_consists_of_other_products" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:translationX="155dp"
+        app:srcCompat="@drawable/icon_feather_search" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/icon_feather_search"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.903"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.04" />
-    <!--    <Button-->
-    <!--        android:id="@+id/menuButton"-->
-    <!--        android:layout_width="35dp"-->
-    <!--        android:layout_height="29dp"-->
-    <!--        android:background="@drawable/icon_feather_menu"-->
-    <!--        tools:ignore="MissingConstraints"-->
-    <!--        tools:layout_editor_absoluteX="16dp"-->
-    <!--        tools:layout_editor_absoluteY="40dp" />-->
-    <!--    <Button-->
-    <!--        android:id="@+id/searchButton"-->
-    <!--        android:layout_width="44dp"-->
-    <!--        android:layout_height="35dp"-->
-    <!--        android:background="@drawable/icon_feather_search"-->
-    <!--        tools:ignore="MissingConstraints"-->
-    <!--        tools:layout_editor_absoluteX="351dp"-->
-    <!--        tools:layout_editor_absoluteY="34dp" />-->
-
-    <Button
-        android:id="@+id/textView9"
-        android:layout_width="32dp"
-        android:layout_height="21dp"
-        android:background="@drawable/icon_feather_menu"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.108"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.039" />
-
-    <TextView
-        android:id="@+id/text_view_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="79dp"
-        android:text="CHARACTERS"
+        android:layout_marginTop="50dp"
+        android:text="CHARACTER"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="25dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView20"
-        tools:ignore="MissingConstraints" />
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <TextView
-        android:id="@+id/text_view_id2"
-        android:layout_width="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
         android:text="HEROS"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="25dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/imageView4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <TextView
-        android:id="@+id/text_view_id3"
-        android:layout_width="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
         android:text="VILLANS"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="25dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/imageView5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/textView20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/_0_809323_the_marvel_cinematic_universe_consists_of_other_products"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.542"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.04" />
-    <!--    <Button-->
-    <!--        android:id="@+id/searchButton"-->
-    <!--        android:layout_width="44dp"-->
-    <!--        android:layout_height="35dp"-->
-    <!--        android:background="@drawable/icon_feather_search"-->
-    <!--        tools:ignore="MissingConstraints"-->
-    <!--        tools:layout_editor_absoluteX="351dp"-->
-    <!--        tools:layout_editor_absoluteY="34dp" />-->
+        />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="418dp"
-        android:layout_height="113dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/text_view_id2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_view_id"
-        app:layout_constraintVertical_bias="0.51"
-        app:srcCompat="@drawable/scroll_group_3"
-        tools:ignore="MissingConstraints" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="411dp"
-        android:layout_height="114dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginBottom="12dp"
-        app:layout_constraintBottom_toTopOf="@+id/text_view_id3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/scroll_group_4"
-        tools:ignore="MissingConstraints" />
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="408dp"
-        android:layout_height="119dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="44dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/scroll_group_5"
-        tools:ignore="MissingConstraints" />
-
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
