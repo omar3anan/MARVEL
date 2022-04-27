@@ -1,6 +1,7 @@
 package com.example.marvel;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -14,25 +15,35 @@ import java.util.List;
 
 public class M4 extends AppCompatActivity {
     public Button button;
+    public Button button2;
     RecyclerView movie;
     List<scroll> scrollList;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState){
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_m4);
-
-        button = findViewById(R.id.buttonx);
-        button.setOnClickListener(new View.OnClickListener(){
+        SharedPreferences preferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+        String display = preferences.getString("display", "");
+        button = (Button) findViewById(R.id.PlayBtn);
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
+            public void onClick(View view) {
                 open_M5();
+            }
+        });
+        button2 = (Button) findViewById(R.id.textView9);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                open_M8();
             }
         });
         Intent intent = getIntent();
         String message = intent.getStringExtra(M3.EXTRA_MESSAGE);
 
-
+        TextView textView = findViewById(R.id.text_message);
+        textView.setText(message);
 
         movie = findViewById(R.id.movies);
         scrollList = new ArrayList<>();
@@ -52,6 +63,11 @@ public class M4 extends AppCompatActivity {
     }
     private void open_M5() {
         Intent intent = new Intent(this, M5.class);
+        startActivity(intent);
+    }
+
+    public void open_M8(){
+        Intent intent=new Intent(M4.this,M8.class);
         startActivity(intent);
     }
 }

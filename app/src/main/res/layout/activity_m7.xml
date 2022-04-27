@@ -56,7 +56,7 @@
         android:id="@+id/imageView3"
         android:layout_width="420dp"
         android:layout_height="80dp"
-        android:layout_marginTop="-40dp"
+        android:layout_marginTop="220dp"
         android:layout_gravity="center_horizontal"
         app:srcCompat="@drawable/amazing_spider_man_vol__1_back_to_basics" />
 </LinearLayout>

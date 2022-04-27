@@ -54,19 +54,22 @@ public class M2 extends AppCompatActivity{
                 SharedPreferences preferences =getSharedPreferences("MYPREFS",MODE_PRIVATE);
                 String userDetails=preferences.getString(user+password+"data","Username Or Password is Incorrect");
                 if(user.equals("Admin") && password.equals("Admin")){
-                SharedPreferences.Editor editor=preferences.edit();
+                    SharedPreferences.Editor editor=preferences.edit();
                     editor.putString("username",user);
                     editor.putString("password",password);
-                    //editor.putString("display",userDetails);
+                    editor.putString("display",userDetails);
                     editor.commit();
                     Toast.makeText(getApplicationContext(), "Login Successful",Toast.LENGTH_SHORT).show();
+                    System.out.println(user);
+                    System.out.println(password);
                     open_M4();
                 }
                 else {
                     Toast.makeText(getApplicationContext(), "Data are not valid", Toast.LENGTH_SHORT).show();
+                    System.out.println("Invalid Data");
                     open_DScreen();
                 }
-               // open_M3();
+                // open_M3();
             }
         });
 
@@ -78,13 +81,17 @@ public class M2 extends AppCompatActivity{
             }
         });
 
-}
+    }
     public void open_DScreen(){
         Intent intent=new Intent(this,DisplayScreen.class);
         startActivity(intent);
     }
     public void open_M3(){
         Intent intent=new Intent(this,M3.class);
+        startActivity(intent);
+    }
+    public void open_M5(){
+        Intent intent=new Intent(this,M5.class);
         startActivity(intent);
     }
 

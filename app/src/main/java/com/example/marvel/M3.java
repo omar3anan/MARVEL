@@ -61,7 +61,7 @@ public class M3 extends AppCompatActivity {
                 String newEmail=RegEmail.getText().toString();
 
                 SharedPreferences.Editor editor=preferences.edit();
-                editor.putString(newUser+newPassword+"data",newUser+"\n"+newEmail);
+                editor.putString(newUser+newPassword+"data",newUser+"\n"+newEmail+"\n"+newPassword);
                 editor.commit();
 
                 open_M2();
