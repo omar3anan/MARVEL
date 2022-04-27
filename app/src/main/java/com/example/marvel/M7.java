@@ -1,37 +1,37 @@
 package com.example.marvel;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class M7 extends AppCompatActivity {
-    private Button button;
-    private Button button2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_m7);
-        button =(Button)findViewById(R.id.rightt);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                open_M8();
-            }
-        });
-        button2 =(Button)findViewById(R.id.textView9);
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                open_M8();
-            }
-        });
-    }
-    public void open_M8(){
-        Intent intent=new Intent(M7.this,M8.class);
-        startActivity(intent);
-    }
 
+        RecyclerView comics;
+        List<scroll> scrollList;
 
+        comics = findViewById(R.id.comics);
+        scrollList = new ArrayList<>();
+
+        scrollList.add(new scroll(R.drawable.clean));
+        scrollList.add(new scroll(R.drawable.nopath___copy));
+        scrollList.add(new scroll(R.drawable.clean));
+        scrollList.add(new scroll(R.drawable.nopath___copy));
+        scrollList.add(new scroll(R.drawable.clean));
+
+        LinearLayoutManager manager = new LinearLayoutManager(this);
+        manager.setOrientation(LinearLayoutManager.HORIZONTAL);
+        comics.setLayoutManager(manager);
+
+        adaptor1 adaptor = new adaptor1(this, scrollList);
+        comics.setAdapter(adaptor);
+    }
 }
