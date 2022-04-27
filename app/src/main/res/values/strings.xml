@@ -1,12 +1,30 @@
+   <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">MARVEL</string>
     <string name="title_activity_display_sceen">DisplaySceen</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="hint_enter_ur_username">أدخل كلمة المستخدم</string>
+    <string name="hint_enter_ur_password">أدخل كلمة المرور</string>
+    <string name="btn_login">تسجيل دخول</string>
+    <string name="hint_mail">Example@mail.com</string>
+    <string name="hint_pass">كلمة السر</string>
+    <string name="btn_sign_up">تسجيل حساب جديد</string>
+    <string name="btn_home">الصفحة الرئيسية</string>
+    <string name="btn_comics">كوميكس</string>
+    <string name="btn_charachters">الشخصيات</string>
+    <string name="btn_about">معلومات</string>
+    <string name="btn_contact_us">تواصل معنا</string>
+    <string name="btn_continue">متابعة</string>
+    <string name="headname_heros">الأبطال</string>
+    <string name="headname_villans">الأشرار</string>
+    <string name="textt_history">في القصة الأولى لـ Spider-Mans ، في Marvel Comics Amazing Fantasy ، لا. 15 (1962) ، المراهق الأمريكي بيتر باركر ، وهو يتيم مريض فقير ، يتعرض للعض من عنكبوت مشع. نتيجة للعضة ، يكتسب قوة خارقة ، وسرعة ، وخفة حركة إلى جانب القدرة على التشبث بالجدران.</string>
+    <string name="text_creators">ستان لي,سيتيف ديتكو,جيرارد واي,كاري أندروس</string>
+    <string name="category_name">سبايدر مان</string>
+    <string name="movies_name">أفلام سبايدر مان</string>
+    <string name="btn_sign_in">تسجيل دخول</string>
+    <string name="hint_history">تاريخ</string>
+    <string name="hint_creators">المخرجين</string>
+    <string name="btn_movies">أفلام</string>
+    <string name="headname_characters">الشخصيات</string>
+    <string name="info_time">١٣٣د</string>
 </resources>
