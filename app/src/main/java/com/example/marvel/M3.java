@@ -63,7 +63,9 @@ public class M3 extends AppCompatActivity {
                 SharedPreferences.Editor editor=preferences.edit();
                 editor.putString(newUser+newPassword+"data",newUser+"\n"+newEmail+"\n"+newPassword);
                 editor.commit();
-
+                System.out.println(newUser);
+                System.out.println(newEmail);
+                System.out.println(newPassword);
                 open_M2();
             }
         });

@@ -7,6 +7,7 @@
     android:layout_height="wrap_content"
     android:layout_marginLeft="10dp">
 
+    //dah shakl el item elly hytkrr gowa el recycle view w el item 3bara 3n image view bs
     <ImageView
         android:id="@+id/image"
         android:layout_width="wrap_content"
