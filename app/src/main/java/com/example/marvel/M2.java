@@ -53,8 +53,8 @@ public class M2 extends AppCompatActivity{
                 String password=etPassword.getText().toString();
                 SharedPreferences preferences =getSharedPreferences("MYPREFS",MODE_PRIVATE);
                 String userDetails=preferences.getString(user+password+"data","Username Or Password is Incorrect");
+                SharedPreferences.Editor editor=preferences.edit();
                 if(user.equals("Admin") && password.equals("Admin")){
-                    SharedPreferences.Editor editor=preferences.edit();
                     editor.putString("username",user);
                     editor.putString("password",password);
                     editor.putString("display",userDetails);

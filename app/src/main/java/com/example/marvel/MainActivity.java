@@ -5,6 +5,7 @@ import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Intent;
+import android.os.Build;
 import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -46,8 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                 //Notification 2 using Notification Compact
-                NotificationCompat.Builder Builder = new NotificationCompat.Builder(MainActivity. this,
-                        default_notification_channel_id )
+                NotificationCompat.Builder Builder = new NotificationCompat.Builder(MainActivity.this,default_notification_channel_id )
                 // Builder has 2 params Context w Channel ID
                         .setSmallIcon(R.drawable. marvel )
                         // Set icon
@@ -55,15 +55,19 @@ public class MainActivity extends AppCompatActivity {
                         // Set Notf Title
                         .setContentText( "Hello! Welcome to the Application We are Happy To have you" );
                         // Set Notf Text
-                NotificationManager NotificationManager = (NotificationManager) getSystemService(Context. NOTIFICATION_SERVICE ) ;
+
+                NotificationManager NotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE) ;
                 // hna byakhod el Context w y-manage el services elly feh
-                if (android.os.Build.VERSION. SDK_INT >= android.os.Build.VERSION_CODES.O ) {
+                if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.O ) {
                     // hna by-Check 3ala el android Version eno lazm ykon a3la mn OREO
+
                     NotificationChannel notificationChannel = new
-                    NotificationChannel( NOTIFICATION_CHANNEL_ID , "NOTIFICATION_CHANNEL_NAME" , NotificationManager. IMPORTANCE_HIGH) ;
+                    NotificationChannel( NOTIFICATION_CHANNEL_ID , "NOTIFICATION_CHANNEL_NAME" , NotificationManager.IMPORTANCE_HIGH) ;
                     // Notification channel btakhod hagten el channel id w el importance bta3 el Notification
+
                     Builder.setChannelId( NOTIFICATION_CHANNEL_ID ) ;
                     // lw la2a haga by3ml specify l el channel elly hy3ml feha deliver ll notification
+
                     assert NotificationManager != null;
                     NotificationManager.createNotificationChannel(notificationChannel) ;
                     // lw el NotificationManager msh b-null f hwa hy-create el message w yb3tha 3aala el channel elly m7ddnha
